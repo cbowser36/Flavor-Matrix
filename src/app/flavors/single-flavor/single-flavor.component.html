@@ -1,0 +1,17 @@
+<body>
+<div>
+<div>
+  <h1>All Flavors!</h1>
+   <div *ngFor="let flavor of flavors">
+        <div class="container"> 
+       <img [src]="flavor.imagePath" class="float-left">
+       <div class="text-block">
+        <h3>{{ flavor.name | uppercase }}</h3>
+        <p class="info">{{ flavor.info }}</p>
+        <p class="pair"> I pair well with: {{ flavor.pairings | alpha }}</p>
+       </div>
+    </div>
+</div>
+</div>
+</div>
+</body>

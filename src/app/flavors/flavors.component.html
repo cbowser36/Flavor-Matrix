@@ -1,0 +1,36 @@
+
+<body>
+  <div>
+    
+<p> Food has the ability to speak to us in ways that we never imagined.<br> It can make you feel something and i don't mean sweat when your eating spicy food.<br> I mean that food is categorized by the  Taste, Mouthfeel, Smell, Look<br>  and how it is percieved by the Mind, Body and Spirit.
+<br> There are five taste categories, Sweet, Salty, Sour, Bitter and Umami(Savory).<br>  There are four categories for mouthfeel, Temperature, Texture, Piquancy(spicyness), <br> and Astringcy.  The Nose picks up Aroma, Pungency and Chemethesis, which is a tickle or false<br>  sensation like how mint is "cold".
+Lastly our Mind, Body and Spirit.<br>  We pick up on an emotional, spiritual, mental and visual appeal to the food.<br>  Does the meal remind you of your childhood, or a breakup?<br>  Does the food look good or not? Does the food make you feel calm or stressed?<br> The ways that food impacts us is so much
+ more than we realize.<br>  That's why it is incredibly important to feed ourselves good food,<br>  good in nutrition but also good for the soul and mind.<br>  Good for the heart  and for the senses. </p>
+
+ <p class="pantry">The flavors i picked out on this page are some of my pantry staples. I keep them around because they bring out these qualities of food. There are so many more but this is the foundation to a great chef's kitchen. Start educating yourself on how to make great meals and your body will thank you! </p>
+  <div class="md-form" >
+  <input type="text"
+   [(ngModel)]="searchText" placeholder="Search Flavors" ng-required="true">
+</div>
+<div *ngFor="let flavor of flavorNames | filter: searchText">
+<a *ngIf="searchText" >{{ flavor }}</a>
+</div>
+<div  class="text" *ngIf="!searchText" ng-show="form.searchText.$touched">
+<span style="color: orangered" ng-show="form.searchText.$error">Check For a Flavor</span>
+</div>
+<p class="search">Looking for a specific spice? Search here to see if i have it on the list!</p>
+<button type="button" class="btn btn-lg btn-block"routerLink='/single-flavor'>All Flavors!</button>
+
+
+</div>
+</body>
+
+
+
+
+
+
+
+
+
+

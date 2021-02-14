@@ -1,0 +1,9 @@
+$mycolor: orangeRed;
+$myAlign: center;
+ h1,h4{
+     color: $mycolor;
+     text-align: $myAlign;
+ }
+ button{
+     color: $mycolor;
+ }

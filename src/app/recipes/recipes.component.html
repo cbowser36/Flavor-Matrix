@@ -1,0 +1,30 @@
+   
+  <div *ngFor="let item of trivia">
+    <h4> Did you know...  {{ item }}</h4>
+ </div>
+<div class="background">
+<slideshow [height]="height"
+           [minHeight]="'650px'"
+           [autoPlay]="false"
+           [showArrows]="true"
+           [imageUrls]="imageUrls">
+</slideshow>
+
+<div class="container" >
+  <div class="btn-group"><button routerLink='/recipe-types'> All Recipes</button></div>
+  <div class="btn-group"><button routerLink='/cocktails'>Cocktails</button>  </div>
+  <div class="btn-group"><button routerLink='/appetizers'>Appetizers</button>  </div>
+  <div class="btn-group"><button routerLink='/vegetables'>Vegetables</button>  </div>
+  <div class="btn-group"><button routerLink='/bread'>Bread</button>  </div>
+  <div class="btn-group"><button routerLink='/seafood'>Seafood</button>  </div>
+  <div class="btn-group"><button routerLink='/poultry'>Poultry</button>  </div>
+  <div class="btn-group"><button routerLink='/meat'>Meat</button>  </div>
+  <div class="btn-group"><button routerLink='/desserts'>Desserts</button>  </div>
+</div>
+
+
+</div>
+
+
+
+

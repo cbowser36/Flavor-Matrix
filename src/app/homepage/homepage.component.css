@@ -1,0 +1,42 @@
+body, html{
+    margin: 0;
+    padding: 0;
+}
+
+.backgroundimg{
+    background-image: url('https://cdn.hipwallpaper.com/i/48/16/Hr4tQb.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+}
+h1{ 
+     border-color: transparent;
+     background-color: transparent;
+     color:orangered;
+     position: relative;
+     text-align: center;
+     font-size: 150px;
+     font-family: "Georgia", Times, serif;
+     padding-top: 9cm;
+   }
+ 
+p,button{
+	text-align: center;
+	font-size: 50px;
+	color:whitesmoke;
+    background-color: transparent;
+	}
+.textPopup{
+	display:none;
+    font-size: 26px;
+    text-align: center;
+}
+.popup:hover + .textPopup{
+    display:block;
+    color: orangered;
+   
+    
+	
+}

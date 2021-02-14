@@ -1,0 +1,9 @@
+$mycolor: orangeRed;
+$myAlign: center;
+h1 {
+    color: $mycolor;
+    text-align: $myAlign;
+}
+img{
+    border: 2px  solid $mycolor;
+    }

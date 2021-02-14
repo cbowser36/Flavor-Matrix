@@ -1,0 +1,36 @@
+.container{
+    position: relative;
+    float: center; 
+    padding-bottom: 3cm;  
+}
+.text-block {
+    position: absolute;
+    bottom: 20px;
+    top:auto;
+    background-color:rgba(0, 0, 0, 0.8); ;
+    color: #f1f1f1;
+}
+  img{
+      width: 350px;;
+      height: 350px;
+      float: right;
+      }
+     
+body{
+     background-image: url('https://wallpaperaccess.com/full/845581.jpg');
+          background-repeat: no-repeat;
+          background-size: cover;
+         background-attachment: fixed;
+        }
+    h1{
+        font-size: 75px;
+    }
+    .info{
+        color: grey;
+    }
+    .pair{
+        color:peru
+    }
+    h3{
+        color:orangered;
+    }

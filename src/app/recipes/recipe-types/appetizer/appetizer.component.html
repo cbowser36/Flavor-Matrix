@@ -1,0 +1,10 @@
+<h1>Appetizers</h1>
+<a *ngFor="let app of appetizers">
+    <div class="container">
+        <img [src]=" app.imagePath " class="image">
+        <div class="middle">
+            <h2><button type="button" (click)="goToUrl(app.recipe)" class="text">{{ app.name }}</button></h2>
+        </div>
+    </div>
+    </a>
+          

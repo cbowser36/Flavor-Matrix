@@ -1,0 +1,9 @@
+<h1>Seafood</h1>
+<a *ngFor="let seafood of seafood">
+    <div class="container">
+      <img [src]=" seafood.imagePath " class="image">
+        <div class="middle">
+            <h2><button type="button" (click)="goToUrl(seafood.recipe)" class="text">{{ seafood.name }}</button></h2>
+        </div>
+    </div>
+</a>

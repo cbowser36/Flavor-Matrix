@@ -1,0 +1,92 @@
+<h1>All Recipes!</h1>
+
+<button routerLink='/cocktails'>Cocktails</button>
+<button routerLink='/appetizers'>Appetizers</button>
+<button routerLink='/vegetables'>Vegetables</button>
+<button routerLink='/bread'>Bread</button>
+<button routerLink='/seafood'>Seafood</button>
+<button routerLink='/poultry'>Poultry</button>
+<button routerLink='/meat'>Meat</button>
+<button routerLink='/desserts'>Desserts</button>
+
+<h1>Cocktails</h1>
+<div class="gallery">
+<a *ngFor="let cocktail of cocktails">
+        <div class="container">
+            <img [src]=" cocktail.imagePath " class="image">
+            <div class="middle">
+            <h2 (click)="showAlert()"><button   (click)="goToUrl(cocktail.recipe)"  class="text">{{ cocktail.name }}</button></h2> 
+        </div>
+    
+    </div>
+</a>
+</div>
+<h1>Appetizers</h1>
+<a *ngFor="let app of appetizers">
+    <div class="container">
+        <img [src]=" app.imagePath " class="image">
+        <div class="middle">
+            <h2><button type="button" (click)="goToUrl(app.recipe)" class="text">{{ app.name }}</button></h2>
+        </div>
+    </div>
+    </a>
+           
+   
+<h1>Vegetables</h1>
+  <a *ngFor="let vege of vegetables" >
+    <div class="container">
+        <img [src]=" vege.imagePath " class="image">
+          <div class="middle">
+            <h2><button type="button" (click)="goToUrl(vege.recipe)" class ='text'>{{ vege.name }}</button></h2>
+        </div>
+    </div>
+</a>   
+    
+<h1>Bread</h1>
+<a *ngFor="let bread of breads">
+    <div class="container">
+        <img [src]=" bread.imagePath " class="image">
+         <div class="middle">
+            <h2><button type="button" (click)="goToUrl(bread.recipe)" class ="text">{{ bread.name }}</button></h2>
+         </div>
+    </div>
+</a>
+<h1>Seafood</h1>
+<a *ngFor="let seafood of seafood">
+    <div class="container">
+      <img [src]=" seafood.imagePath " class="image">
+        <div class="middle">
+            <h2><button type="button" (click)="goToUrl(seafood.recipe)" class="text">{{ seafood.name }}</button></h2>
+        </div>
+    </div>
+</a>
+<h1>Poultry</h1>
+<a *ngFor="let poultry of poultry" >
+    <div class="container" >
+        <img [src]=" poultry.imagePath " class="image">
+          <div class="middle">
+            <h2><button type="button" (click)="goToUrl(poultry.recipe)" class="text">{{ poultry.name }}</button></h2>
+        </div>
+    </div>
+</a>   
+<h1>Meat</h1>
+<a *ngFor="let meat of meat">
+    <div class="container">
+        <img [src]=" meat.imagePath " class="image">
+         <div class="middle">
+            <h2><button type="button" (click)="goToUrl(meat.recipe)" class="text">{{ meat.name }}</button></h2>
+         </div>
+    </div>
+</a>
+<h1>Desserts</h1>
+<a id="Desserts"></a>
+<a *ngFor="let dessert of desserts" >
+    <div class="container">
+        <img [src]=" dessert.imagePath " class="image">
+        <div class="middle">
+            <h2><button type="button" (click)="goToUrl(dessert.recipe)" class="text">{{ dessert.name }}</button></h2>
+        </div>
+    </div>
+</a>
+            
+    

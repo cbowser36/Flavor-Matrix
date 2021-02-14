@@ -1,0 +1,11 @@
+<h1>Cocktails</h1>
+<div class="gallery">
+<a *ngFor="let cocktail of cocktails">
+        <div class="container">
+            <img [src]=" cocktail.imagePath " class="image">
+            <div class="middle">
+            <h2><button type="button" (click)="goToUrl(cocktail.recipe)" class="text">{{ cocktail.name }}</button></h2> 
+        </div>
+    </div>
+</a>
+</div>

@@ -1,0 +1,9 @@
+<h1>Bread</h1>
+<a *ngFor="let bread of breads">
+    <div class="container">
+        <img [src]=" bread.imagePath " class="image">
+         <div class="middle">
+            <h2><button type="button" (click)="goToUrl(bread.recipe)" class ="text">{{ bread.name }}</button></h2>
+         </div>
+    </div>
+</a>

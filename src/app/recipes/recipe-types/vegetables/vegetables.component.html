@@ -1,0 +1,9 @@
+<h1>Vegetables</h1>
+  <a *ngFor="let vege of vegetables" >
+    <div class="container">
+        <img [src]=" vege.imagePath " class="image">
+          <div class="middle">
+            <h2><button type="button" (click)="goToUrl(vege.recipe)" class ='text'>{{ vege.name }}</button></h2>
+        </div>
+    </div>
+</a>
